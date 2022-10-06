@@ -1,0 +1,22 @@
+cmos nand 
+.include techfile130.txt
+
+Mp1 y A Vdd Vdd pmos w=130n l=130n
+Mp2 y B Vdd Vdd pmos w=130n l=130n
+Mn1 y A n1 0 nmos w=130n l=130n
+Mn2 n1 B 0 0 nmos w=130n l=130n
+
+Vdd Vdd 0 1.2
+VA  A   0 pulse(0 1.2 0 0.5n 0.5n 10n 20n)
+VB  B   0 pulse(0 1.2 0 0.5n 0.5n 20n 40n)  
+
+.tran 0.1n 500n
+
+.control
+run
+
+plot V(y) V(A) V(B)
+.endc
+.end
+
+

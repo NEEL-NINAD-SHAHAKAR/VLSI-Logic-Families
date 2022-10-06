@@ -1,0 +1,12 @@
+* SPICE3 file created from pass_and.ext - technology: scmos
+
+.option scale=1u
+
+M1000 out B A Gnd nfet w=17 l=4
++  ad=1462 pd=240 as=612 ps=106
+M1001 out B_bar B Gnd nfet w=17 l=4
++  ad=0 pd=0 as=629 ps=108
+C0 m2_n43_n22# Gnd 2.13fF **FLOATING
+C1 B_bar Gnd 6.82fF
+C2 out Gnd 11.28fF
+C3 B Gnd 25.20fF

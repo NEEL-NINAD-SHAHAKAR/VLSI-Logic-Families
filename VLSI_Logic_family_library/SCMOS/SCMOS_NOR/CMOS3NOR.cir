@@ -1,0 +1,22 @@
+CMOS NOR
+.include techfile130.txt
+
+Mp1 n1 A Vdd Vdd pmos w=720n l=130n
+Mp2 n2 B n1  Vdd pmos w=720n l=130n
+Mp3 Y  C n2  Vdd pmos w=720n l=130n
+Mn1 Y  A 0   0   nmos w=130n l=130n
+Mn2 Y  B 0   0   nmos w=130n l=130n
+Mn3 Y  C 0   0   nmos w=130n l=130n
+Vdd Vdd 0 1.2
+VA A 0 Pulse(0 1.2 0 1n 1n 10n 20n)
+VB B 0 Pulse(0 1.2 0 1n 1n 20n 40n)
+VC C 0 Pulse(0 1.2 0 1n 1n 40n 80n)
+
+.tran 0.1n 500n
+.control
+run
+
+plot V(y) V(A) V(B) V(C)
+.endc
+.end
+

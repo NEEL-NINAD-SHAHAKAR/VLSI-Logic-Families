@@ -1,0 +1,15 @@
+.title NOR lib
+.include techfile130.txt
+
+
+.SUBCKT NOR A B y Vdd
+Mp1 y A n1 Vdd pmos w=130n l=130n
+Mp2 n1 B Vdd Vdd pmos w=130n l=130n
+Mn1 y A 0 0 nmos w=130n l=130n
+Mn2 y B 0 0 nmos w=130n l=130n
+
+
+.ENDS 2NAND
+
+.end
+

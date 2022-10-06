@@ -1,0 +1,38 @@
+timestamp 1664793188
+version 8.2
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "C" 0 1520 -9 -25 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120 68 0 0
+node "Gnd" 117 6956 21 -42 ndiff 105 44 16 16 0 0 0 0 0 0 0 0 192 104 0 0 0 0
+node "a_11_n42#" 50 0 11 -42 ndiff 120 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1_n42#" 50 0 1 -42 ndiff 120 46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Out" 411 11092 -9 -42 ndiff 120 46 176 76 0 0 0 0 0 0 0 0 436 226 0 0 0 0
+node "a_19_n44#" 728 9122 19 -44 p 0 0 0 0 138 134 0 0 0 0 0 0 16 16 0 0 0 0
+node "B" 728 11378 5 -17 pc 0 0 0 0 138 134 0 0 0 0 0 0 72 44 0 0 0 0
+node "A" 728 9874 -5 -10 pc 0 0 0 0 138 134 0 0 0 0 0 0 32 24 0 0 0 0
+node "Vdd" 4607 0 -9 2 nw 16 16 165 74 0 0 0 0 0 0 0 0 252 134 0 0 814 118
+cap "Vdd" "a_19_n44#" 1432
+cap "B" "Out" 240
+cap "a_11_n42#" "Out" 2632
+cap "a_19_n44#" "Out" 240
+cap "a_1_n42#" "Out" 1504
+cap "C" "A" 152
+cap "Vdd" "A" 1432
+cap "C" "Out" 720
+cap "Vdd" "Out" 752
+cap "A" "Out" 240
+cap "C" "B" 152
+cap "Vdd" "B" 1432
+cap "C" "a_19_n44#" 152
+cap "A" "B" 240
+device mosfet nfet 19 -42 20 -41 2 15 "Gnd!" "a_19_n44#" 4 0 "a_11_n42#" 15 0 "Gnd" 15 0
+device mosfet nfet 9 -42 10 -41 2 15 "Gnd!" "B" 4 0 "a_1_n42#" 15 0 "a_11_n42#" 15 0
+device mosfet nfet -1 -42 0 -41 2 15 "Gnd!" "A" 4 0 "Out" 15 0 "a_1_n42#" 15 0
+device mosfet pfet 19 4 20 5 2 11 "Vdd" "a_19_n44#" 4 0 "Out" 11 0 "Vdd" 11 0
+device mosfet pfet 9 4 10 5 2 11 "Vdd" "B" 4 0 "Vdd" 11 0 "Out" 11 0
+device mosfet pfet -1 4 0 5 2 11 "Vdd" "A" 4 0 "Out" 11 0 "Vdd" 11 0
+subcap "Gnd" -3666
+subcap "B" -564
+subcap "A" -564

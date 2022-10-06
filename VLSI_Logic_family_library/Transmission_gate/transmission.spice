@@ -1,0 +1,10 @@
+* SPICE3 file created from /home/neel/VLSI_Logic_family_library/Transmission_gate/transmission.ext - technology: scmos
+
+.option scale=1u
+
+M1000 out GND in GND pfet w=14 l=2
++  ad=112 pd=44 as=98 ps=42
+M1001 out VDD in Gnd nfet w=7 l=2
++  ad=56 pd=30 as=49 ps=28
+C0 VDD Gnd 6.18fF
+C1 in Gnd 3.01fF

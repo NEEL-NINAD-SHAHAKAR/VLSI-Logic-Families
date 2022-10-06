@@ -1,0 +1,21 @@
+.title Vtc
+.include techfile130.txt
+
+vdd vdd 0 1.2
+
+* Inputs to transistors
+vin vi 0 PULSE(0 1.2 2NS 2NS 2NS 50NS 100NS)
+
+******************MOSFETs drain gate source body
+Mp vout vi vdd vdd pmos l=130n w=500n 
+Mn vout vi 0 0 nmos l=130n w=250n
+Cload vout 0 10f
+
+.tran 0.1n 300ns 0.1n
+//.dc vin 0 1.2 0.1 
+
+.control
+run 
+plot v(vi) v(vout)
+.endc
+.end

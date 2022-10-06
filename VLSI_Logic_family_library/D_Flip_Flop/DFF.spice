@@ -1,0 +1,15 @@
+* SPICE3 file created from DFF.ext - technology: scmos
+
+.option scale=1u
+
+C0 Gnd 0 2.54fF **FLOATING
+C1 m1_84_30# 0 2.82fF **FLOATING
+C2 m1_n126_33# 0 18.29fF **FLOATING
+C3 Vdd 0 3.85fF **FLOATING
+C4 m1_84_70# 0 5.29fF **FLOATING
+C5 m1_8_23# 0 32.52fF **FLOATING
+C6 m1_n72_32# 0 8.88fF **FLOATING
+C7 m1_n42_59# 0 37.98fF **FLOATING
+C8 m1_n126_73# 0 21.86fF **FLOATING
+C9 m1_n126_53# 0 9.89fF **FLOATING
+C10 m1_n75_62# 0 52.87fF **FLOATING

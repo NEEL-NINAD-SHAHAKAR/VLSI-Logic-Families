@@ -1,0 +1,16 @@
+timestamp 1664735839
+version 8.2
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use inverter inverter_0 0 1 1 -1 0 -12
+node "m2_2_n22#" 0 1824 2 -22 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 56 0 0
+node "m2_n43_n22#" 0 2128 -43 -22 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 72 0 0
+node "B_bar" 149 6816 -7 -71 p 0 0 0 0 100 58 0 0 0 0 0 0 80 48 0 0 0 0
+node "out" 207 11280 -3 -69 ndiff 1462 240 0 0 0 0 0 0 0 0 0 0 296 156 0 0 0 0
+node "A" 57 0 -43 5 ndiff 612 106 0 0 0 0 0 0 0 0 0 0 116 66 0 0 0 0
+node "B" 251 25196 -44 -69 ndiff 629 108 0 0 128 72 0 0 0 0 0 0 528 274 0 0 0 0
+cap "B" "m2_n43_n22#" 720
+device mosfet nfet -7 -69 -6 -68 4 17 "Gnd!" "B_bar" 8 0 "B" 17 0 "out" 17 0
+device mosfet nfet -7 5 -6 6 4 17 "Gnd!" "B" 8 0 "A" 17 0 "out" 17 0

@@ -1,0 +1,29 @@
+.title Transmission gate
+.include techfile130.txt
+
+****.include INVERTER.lib******
+
+
+Vdd Vdd 0    1.2
+****In1 A A_bar Vdd INVERTER****
+Mp1 out 0 in  Vdd   pmos w=260n l=130n
+Mn1 out  Vdd  in  0 nmos w=130n l=130n
+
+
+Vin    in    0    pulse(0 1.2 0   1n 1n 20n 40n)
+//VA     A     0    pulse(0 1.2 1n  1n 1n 10n 20n)
+//VA_bar A_bar 0    pulse(0 1.2 11n 1n 1n 10n 20n)  
+**Cload in 0 10f
+
+.tran 0.1 200n
+
+.control
+run
+plot V(out) 
+plot V(in)
+
+.endc
+.end
+
+
+

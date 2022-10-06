@@ -1,0 +1,12 @@
+
+.title Inverter lib
+.include techfile130.txt
+
+.SUBCKT INV vi vout Vdd
+Mp vout vi Vdd Vdd pmos l=130n w=500n 
+Mn vout vi 0   0   nmos l=130n w=250n
+
+.ENDS INVERTER
+
+.end
+

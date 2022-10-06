@@ -1,0 +1,28 @@
+.title Footed Dynamic NAND
+.include techfile130.txt
+
+
+Vdd Vdd 0 1.2
+
+Mp1 Y  clk Vdd Vdd pmos w=130n l=130n
+Mn1 Y  A   n1  0   nmos w=260n l=130n
+Mn2 n1 B   n2  0   nmos w=260n l=130n
+Mn3 n2 C   n3  0   nmos w=260n l=130n
+Mn4 n3 clk 0   0   nmos w=260n l=130n
+cload y 0 10f
+
+Vclk clk 0 pulse(0 1.2 1n  1n 1n 10n 20n)
+Va   A   0 pulse(0 1.2 0  1n 1n 20n 40n)
+Vb   B   0 pulse(0 1.2 0  1n 1n 40n 80n)
+Vc   C   0 pulse(0 1.2 0  1n 1n 80n 160n)
+
+.tran 0.1n 500n
+
+.control
+run
+plot V(A) v(B) V(C) V(clk) V(Y)
+
+.endc
+.end
+
+

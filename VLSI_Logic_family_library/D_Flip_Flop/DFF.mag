@@ -1,0 +1,133 @@
+magic
+tech scmos
+timestamp 1664821269
+<< metal1 >>
+rect -57 110 -6 114
+rect -2 110 64 114
+rect -85 99 -69 100
+rect -85 97 -66 99
+rect -72 93 -66 97
+rect -151 82 -91 87
+rect -151 73 -138 77
+rect -95 66 -91 82
+rect -57 66 -53 110
+rect -95 62 -79 66
+rect -75 62 -53 66
+rect -42 101 46 105
+rect -42 63 -38 101
+rect -42 59 -26 63
+rect -151 53 -138 57
+rect 42 54 46 101
+rect -149 24 -145 53
+rect 8 50 17 54
+rect 33 50 46 54
+rect 60 54 64 110
+rect 154 102 160 107
+rect 96 66 102 70
+rect 154 66 160 70
+rect 96 54 100 66
+rect 154 59 160 63
+rect 60 50 72 54
+rect 88 50 100 54
+rect -93 32 -85 36
+rect -93 24 -89 32
+rect -149 20 -89 24
+rect 8 27 12 50
+rect 92 27 96 50
+rect 154 32 160 37
+rect 8 23 96 27
+<< metal2 >>
+rect -126 118 33 122
+rect -126 77 -122 118
+rect -114 93 -85 97
+rect -35 93 -28 97
+rect -114 57 -110 93
+rect -122 53 -110 57
+rect -35 53 -31 93
+rect -6 63 -2 110
+rect 29 74 33 118
+rect 84 102 97 107
+rect 84 74 88 102
+rect 33 70 68 74
+rect -14 59 -2 63
+rect -57 49 -31 53
+rect -151 33 -142 37
+rect -122 33 -97 37
+rect -57 36 -53 49
+rect -101 30 -97 33
+rect -68 32 -53 36
+rect 84 34 99 37
+rect 33 30 68 34
+rect 88 32 99 34
+rect -101 27 -83 30
+rect -101 26 4 27
+rect -87 23 4 26
+rect 0 19 4 23
+rect 29 19 33 30
+rect 0 15 33 19
+<< metal3 >>
+rect -73 99 -65 100
+rect -73 93 -72 99
+rect -66 98 -65 99
+rect -66 93 -44 98
+rect -73 92 -44 93
+rect -50 38 -44 92
+rect -33 38 -24 39
+rect -50 32 -31 38
+rect -25 32 -24 38
+rect -33 31 -24 32
+<< m2contact >>
+rect -6 110 -2 114
+rect -85 93 -81 97
+rect -126 73 -122 77
+rect -28 93 -24 97
+rect 29 70 33 74
+rect -18 59 -14 63
+rect -126 53 -122 57
+rect 97 102 102 107
+rect 68 70 72 74
+rect 84 70 88 74
+rect -142 33 -138 37
+rect -126 33 -122 37
+rect -72 32 -68 36
+rect 29 30 33 34
+rect 68 30 72 34
+rect 84 30 88 34
+rect 99 32 104 37
+<< m3contact >>
+rect -72 93 -66 99
+rect -31 32 -25 38
+use CMOS_INV1  CMOS_INV1_2 ~/VLSI_Logic_family_library/SCMOS/Inverter
+timestamp 1664803793
+transform 1 0 -130 0 1 52
+box -8 -19 8 25
+use transmission  transmission_1
+timestamp 1664804018
+transform 1 0 -89 0 1 70
+box 3 -38 22 27
+use transmission  transmission_0
+timestamp 1664804018
+transform 1 0 -32 0 1 70
+box 3 -38 22 27
+use CMOS_INV1  CMOS_INV1_0
+timestamp 1664803793
+transform 1 0 25 0 1 49
+box -8 -19 8 25
+use CMOS_INV1  CMOS_INV1_1
+timestamp 1664803793
+transform 1 0 80 0 1 49
+box -8 -19 8 25
+use SCMOS_NOR  SCMOS_NOR_0 ~/VLSI_Logic_family_library/SCMOS/SCMOS_NOR
+timestamp 1664280382
+transform 1 0 124 0 1 67
+box -22 -35 30 40
+<< labels >>
+rlabel metal1 -149 85 -149 85 3 D
+rlabel metal1 -149 75 -149 75 3 Vdd
+rlabel metal2 -150 35 -150 35 3 Gnd
+rlabel metal1 -150 55 -150 55 3 Clk
+rlabel metal1 158 68 158 68 7 Q
+rlabel metal1 158 104 158 104 7 Vdd
+rlabel metal1 158 61 158 61 7 R
+rlabel metal1 158 34 158 34 7 Gnd
+<< end >>

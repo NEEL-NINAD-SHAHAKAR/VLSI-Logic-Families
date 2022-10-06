@@ -1,0 +1,17 @@
+* SPICE3 file created from static_cmos_nand.ext - technology: scmos
+
+.option scale=1u
+
+M1000 OUT B vdd vdd pfet w=15 l=2
++  ad=525 pd=130 as=345 ps=76
+M1001 vdd a_n1_n37# OUT vdd pfet w=15 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_1_n35# a_n1_n37# OUT Gnd nfet w=15 l=2
++  ad=345 pd=76 as=180 ps=54
+M1003 gnd B a_1_n35# Gnd nfet w=15 l=2
++  ad=345 pd=76 as=0 ps=0
+C0 gnd Gnd 6.49fF
+C1 OUT Gnd 12.50fF
+C2 B Gnd 10.41fF
+C3 a_n1_n37# Gnd 7.22fF
+C4 vdd Gnd 11.66fF

@@ -1,0 +1,23 @@
+.title Pass transistor AND
+.include techfile130.txt
+
+.include INVERTER.lib
+
+Vdd Vdd 0 1.2
+In1 B B_bar Vdd INVERTER
+Mn1 Y B     A 0 nmos w=130n l=130n
+Mn2 Y B_bar B 0 nmos w=130n l=130n
+
+Va A 0 pulse(0 1.2 1n 1n 1n 40n 80n)
+Vb B 0 pulse(0 1.2 0  1n 1n 80n 160n)
+
+.tran 0.1n 500n
+
+.control
+run
+plot V(A) v(B) V(Y)
+
+.endc
+.end
+
+

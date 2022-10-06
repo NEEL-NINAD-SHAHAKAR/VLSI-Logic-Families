@@ -1,0 +1,15 @@
+.title transmission gate lib
+.include techfile130.txt
+.include INVERTER.lib
+
+
+.SUBCKT TRN in out n1 vdd
+X1 n1 n2 vdd INV
+Mp1 out 0 in  n1   pmos w=260n l=130n
+Mn1 out  n2  in  0 nmos w=130n l=130n
+
+.ENDS TRANSMISSION_GATE
+
+.end
+
+

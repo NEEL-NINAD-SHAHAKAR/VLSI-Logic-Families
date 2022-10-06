@@ -1,0 +1,10 @@
+* SPICE3 file created from CMOS_INV1.ext - technology: scmos
+
+.option scale=1u
+
+M1000 out in Gnd Gnd nfet w=8 l=2
++  ad=56 pd=30 as=56 ps=30
+M1001 out in Vdd Vdd pfet w=8 l=2
++  ad=56 pd=30 as=56 ps=30
+C0 Gnd Gnd 3.20fF
+C1 in Gnd 4.50fF

@@ -1,0 +1,29 @@
+.title D flip flop
+.include techfile130.txt
+.include INVERTER.lib
+.include Transmission_Gate.lib
+.include NOR.lib
+
+Vdd Vdd 0 1.2
+Vclk clk 0 pulse(0 1.2 1n  1n 1n 10n 20n)
+Vd   D   0 pulse(0 1.2 0  1n 1n 20n 40n)
+VS   S   0 pulse(0 1.2 10n  1n 1n 20n 40n)
+
+X6 clk clk_bar Vdd INV
+X1 D  n1 clk Vdd TRN
+X2 n1 n2 Vdd INV
+X3 n2 n3 Vdd INV
+X4 n3  n1 clk_bar Vdd TRN
+X5 n3 S Q Vdd NOR
+
+
+.tran 0.1n 100n
+
+.control
+run
+plot V(D) v(clk) V(S) V(Q)
+
+.endc
+.end
+
+

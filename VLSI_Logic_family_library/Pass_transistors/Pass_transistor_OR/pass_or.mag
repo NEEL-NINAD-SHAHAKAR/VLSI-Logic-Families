@@ -1,0 +1,65 @@
+magic
+tech scmos
+timestamp 1664735464
+<< polysilicon >>
+rect -7 22 -3 24
+rect -7 -4 -3 5
+rect -7 -52 -3 -50
+rect -7 -71 -3 -69
+<< ndiffusion >>
+rect -43 13 -7 22
+rect -43 9 -18 13
+rect -14 9 -7 13
+rect -43 5 -7 9
+rect -3 12 40 22
+rect -3 8 33 12
+rect 37 8 40 12
+rect -3 5 40 8
+rect -44 -60 -7 -52
+rect -44 -64 -20 -60
+rect -16 -64 -7 -60
+rect -44 -69 -7 -64
+rect -3 -55 40 -52
+rect -3 -59 33 -55
+rect 37 -59 40 -55
+rect -3 -69 40 -59
+<< metal1 >>
+rect -43 9 -18 13
+rect -34 -4 -11 0
+rect -34 -7 -30 -4
+rect -43 -11 -30 -7
+rect -11 -9 -7 -4
+rect 33 -6 37 8
+rect -11 -12 -3 -9
+rect -7 -23 -3 -12
+rect 33 -10 40 -6
+rect -7 -46 -3 -30
+rect 33 -55 37 -10
+<< metal2 >>
+rect -43 -22 -11 -18
+rect 2 -22 51 -18
+rect -20 -71 -16 -60
+rect 47 -71 51 -22
+rect -20 -75 51 -71
+<< ntransistor >>
+rect -7 5 -3 22
+rect -7 -69 -3 -52
+<< polycontact >>
+rect -11 -4 -7 0
+rect -7 -50 -3 -46
+<< ndcontact >>
+rect -18 9 -14 13
+rect 33 8 37 12
+rect -20 -64 -16 -60
+rect 33 -59 37 -55
+use inverter  inverter_0
+timestamp 1664265444
+transform 0 1 1 -1 0 -12
+box 4 -25 21 22
+<< labels >>
+rlabel metal1 -32 11 -32 11 1 A
+rlabel metal1 38 -8 38 -8 7 out
+rlabel metal1 -39 -9 -39 -9 3 B
+rlabel metal1 -5 -39 -5 -39 1 B_bar
+rlabel metal2 49 -44 49 -44 7 VDD
+<< end >>
